@@ -1,0 +1,53 @@
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 60px;
+    &__logo {
+        span {
+            font-size: 30px;
+        }
+    }
+}
+
+.carousel-control.left,
+.carousel-control.right {
+    background-image: none
+}
+
+.carousel-caption {
+    top: 55%;
+    transform: translateY(-50%);
+    bottom: initial;
+    text-align: left;
+    p {
+        max-width: 600px;
+        width: 100%;
+        line-height: 2;
+    }
+}
+
+.carousel-inner {
+    .item {
+        min-height: 500px;
+        height: 100vh;
+        background-position: center center;
+        background-size: cover;
+    }
+    .item-1 {
+        background-image: linear-gradient(to right bottom, rgba(31, 32, 31, 0.5), rgba(31, 32, 31, 0.5)), url('../images/carousel/1.jpg');
+    }
+    .item-2 {
+        background-image: linear-gradient(to right bottom, rgba(31, 32, 31, 0.5), rgba(31, 32, 31, 0.5)), url('../images/carousel/2.jpg');
+    }
+    .item-3 {
+        background-image: linear-gradient(to right bottom, rgba(31, 32, 31, 0.5), rgba(31, 32, 31, 0.5)), url('../images/carousel/3.png');
+    }
+    .item-4 {
+        background-image: linear-gradient(to right bottom, rgba(31, 32, 31, 0.5), rgba(31, 32, 31, 0.5)), url('../images/carousel/1.jpg');
+    }
+    .item-5 {
+        background-image: linear-gradient(to right bottom, rgba(31, 32, 31, 0.5), rgba(31, 32, 31, 0.5)), url('../images/carousel/1.jpg');
+    }
+}
